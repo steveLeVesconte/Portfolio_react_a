@@ -8,11 +8,14 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import play from "../../Assets/Projects/Play.png";
+import payment from "../../Assets/Projects/payment-portal-1-1024x603.png";
+import CeuCatelog2fixed from "../../Assets/Projects/CeuCatelog2fixed.png";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
+{/*       <Particle /> */}
       <Container>
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
@@ -20,41 +23,39 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row className="project-row" style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={CeuCatelog2fixed}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Public Access"
+              description="A continuing education database where you will find a list of courses which have been approved by NAB (National Association of Long Term Care Administrator Boards) and the Ohio Department of Aging."
+
+              demoLink="https://ceucatalog.age.ohio.gov/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={payment}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Public Payment"
+              description="Online public portal allows customers (licensees and companies) to search for and pay their invoices online for the State of Ohio.  This system is used by Licensed Nursing Home Administrators, Nursing Home companies and Continuing Education Course Providers.  Users can search for their invoices by multiple criteria.  Users can see the status of their invoices (paid or not) and optionally pay them online with either major credit card or checking account."
+
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={play}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Azue AD B2C Go Game"
+              description="The purpose of the project is to provide an adequately rich domain for the exploration of multiple technologies. In my experience, many learning projects are too simple to challenge a developer to deeply exercise a technology. The developer can find themselves doing little more than repeating the pre-packaged solutions provided in tutorials."
+              
             />
           </Col>
 
-          <Col md={4} className="project-card">
+ {/*          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
@@ -86,7 +87,7 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
