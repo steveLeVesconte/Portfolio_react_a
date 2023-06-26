@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import meInWhiteShirt from "../../Assets/rotateLeftandBack.jpg";
-import myImg from "../../Assets/avatar.svg";
-import Tilt from "react-parallax-tilt";
+/* import myImg from "../../Assets/avatar.svg";
+import Tilt from "react-parallax-tilt"; */
 import {
   AiFillGithub,
 /*   AiOutlineTwitter,
